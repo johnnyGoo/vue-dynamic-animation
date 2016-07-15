@@ -103,11 +103,8 @@
                 Css.createSmartCssStyle('.' + this.transition + '-enter', _.clone(this.enter), 'px');
             } else if (this.type == 'animation') {
 
-
                 var objj=Smart.Utils.deepClone(this.keyframes);
                 var anim = Smart.Animations.create(objj);
-
-                console.log(objj);
                 this.animation['animation-name']=anim.name;
                 Smart.Css.createSmartCssStyle('.' + this.transition, this.animation, 'px');
 

@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cf472f0-23fc-4b1e-a762-548546a2dded" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/vue_dynamic_animation_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/VueDynamicAnimation.vue" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vue-dynamic-animation.htm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vue-dynamic-animation_files/smart.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vue-dynamic-animation_files/vue-dynamic-animation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vue-dynamic-animation_files/vue-swiper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vue-dynamic-animation_files/vue-waterfall.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/vue-dynamic-animation_files/vue.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/vue-dynamic-animation.js" afterPath="$PROJECT_DIR$/dist/vue-dynamic-animation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/vue-dynamic-animation.js.map" afterPath="$PROJECT_DIR$/dist/vue-dynamic-animation.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/VueDynamicAnimation.vue" afterPath="$PROJECT_DIR$/src/VueDynamicAnimation.vue" />
     </list>
     <ignored path="vue-dynamic-animation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +35,8 @@
       <file leaf-file-name="VueDynamicAnimation.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/VueDynamicAnimation.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+            <state relative-caret-position="406">
+              <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -39,8 +45,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="243">
+              <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#dynamic-animation#0;n#div#0;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -109,7 +115,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -145,6 +150,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,11 +257,12 @@
       <workItem from="1468520532990" duration="26130000" />
       <workItem from="1468590881419" duration="592000" />
       <workItem from="1468599797393" duration="946000" />
+      <workItem from="1468613786964" duration="286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30822000" />
+    <option name="totallyTimeSpent" value="31108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="833" extended-state="6" />
@@ -298,6 +305,32 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/VueDynamicAnimation.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1560">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#0;n#div#0;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#0;n#div#1;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#1;n#div#1;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#0;n#div#2;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#1;n#div#2;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#0;n#div#3;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#4;n#div#3;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#dynamic-animation#0;n#div#4;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/VueDynamicAnimation.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
@@ -418,16 +451,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/VueDynamicAnimation.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        <state relative-caret-position="406">
+          <caret line="105" column="38" selection-start-line="105" selection-start-column="38" selection-end-line="105" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="243">
+          <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#dynamic-animation#0;n#div#0;n#swiper#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
