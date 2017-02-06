@@ -1,5 +1,5 @@
 <template>
-    <div :transition="transition" :class="transition">
+    <div :transition="active?transition:''" :class="active?transition:''">
         <slot></slot>
     </div>
 </template>
@@ -34,6 +34,10 @@
                 default: function () {
                     return {}
                 }
+            },
+            active:{
+                type:Boolean,
+                default:true
             },
             enter: {
                 type: Object,
@@ -72,23 +76,16 @@
             count++;
             return {
                 transition: 'vue-dynamic-animation-count' + count,
-
             }
         },
-
         methods: {
             _on_end: function () {
                 console.log(this.transition)
             }
         },
         computed: {},
-
-
         ready: function () {
-
             if (this.type == 'transition') {
-
-
                 if (_.isEqual({}, this.enter) && _.isEqual({}, this.leave)) {
                     Css.smartCss(this.$el, this.normal, 'px');
                     return;
@@ -102,17 +99,13 @@
                 Css.createSmartCssStyle('.' + this.transition + '-leave', _.clone(this.leave), 'px');
                 Css.createSmartCssStyle('.' + this.transition + '-enter', _.clone(this.enter), 'px');
             } else if (this.type == 'animation') {
-
                 var objj=Smart.Utils.deepClone(this.keyframes);
                 var anim = Smart.Animations.create(objj);
                 this.animation['animation-name']=anim.name;
                 Smart.Css.createSmartCssStyle('.' + this.transition, this.animation, 'px');
 
             }
-
         }
-
-
     }
 
 

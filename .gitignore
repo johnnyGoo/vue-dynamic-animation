@@ -1,1 +1,6 @@
 node_modules/
+.idea/workspace.xml
+
+dist/.DS_Store
+
+img/.DS_Store
