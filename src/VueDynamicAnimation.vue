@@ -25,29 +25,52 @@
     var _ = Smart._;
 
 
+    function defaultAnimate() {
+        return {
+            'animation-duration': '1s',
+            'animation-timing-function': 'cubic-bezier(0.36,0.07,0.19,0.97)',
+            'animation-iteration-count': 'infinite',
+            'animation-direction': 'alternate'
+        }
+    }
+    function defaultNormal() {
+        return {transition: 'all 0.5s ease', opacity: 1, 'transition-delay': '0.01s'}
+    }
+    function defaultLeave() {
+        return {transition: 'all 0.5s ease', opacity: 0, 'transition-delay': '0.01s'}
+    }
+
+
     // 注册
     export default {
         // 声明 props
         props: {
             normal: {
                 type: Object,
+                coerce: function (val) {
+                    return _.extend(defaultNormal(), val);
+                },
                 default: function () {
-                    return {}
+                    return {};
                 }
             },
-            active:{
-                type:Boolean,
-                default:true
+            active: {
+                type: Boolean,
+                default: true
             },
             enter: {
-                type: Object,
+                type: Object, coerce: function (val) {
+                    return _.extend(defaultLeave(), val);
+                },
                 default: function () {
-                    return {}
+                    return {};
                 }
             }, leave: {
-                type: Object,
+                type: Object, coerce: function (val) {
+                    return _.extend(defaultLeave(), val);
+                },
                 default: function () {
-                    return {}
+                    return {};
                 }
             }, type: {
                 type: String,
@@ -62,13 +85,11 @@
                 }
             }, animation: {
                 type: Object,
+                coerce: function (val) {
+                    return _.extend( defaultAnimate(),val);
+                },
                 default: function () {
-                    return {
-                        'animation-duration': '1s',
-                        'animation-timing-function': 'cubic-bezier(0.36,0.07,0.19,0.97)',
-                        'animation-iteration-count': 'infinite',
-                        'animation-direction':'alternate'
-                    }
+                    return {}
                 }
             }
         },
@@ -99,9 +120,9 @@
                 Css.createSmartCssStyle('.' + this.transition + '-leave', _.clone(this.leave), 'px');
                 Css.createSmartCssStyle('.' + this.transition + '-enter', _.clone(this.enter), 'px');
             } else if (this.type == 'animation') {
-                var objj=Smart.Utils.deepClone(this.keyframes);
+                var objj = Smart.Utils.deepClone(this.keyframes);
                 var anim = Smart.Animations.create(objj);
-                this.animation['animation-name']=anim.name;
+                this.animation['animation-name'] = anim.name;
                 Smart.Css.createSmartCssStyle('.' + this.transition, this.animation, 'px');
 
             }
